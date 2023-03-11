@@ -2563,6 +2563,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_account_circle_24
+drawable ic_baseline_chat_24
+drawable ic_baseline_home_24
+drawable ic_baseline_notifications_active_24
+drawable ic_baseline_search_24
 drawable ic_clock_black_24dp
 drawable ic_closedialog
 drawable ic_keyboard_black_24dp
@@ -2699,6 +2704,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id account
 id actionDown
 id actionDownUp
 id actionUp
@@ -2745,10 +2751,12 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottom_navigation
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button
 id button1
 id button3
 id buttonPanel
@@ -2765,6 +2773,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id chat
 id checkbox
 id checked
 id chronometer
@@ -2968,6 +2977,7 @@ id noState
 id none
 id normal
 id north
+id notification
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3014,6 +3024,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
 id search_button
@@ -3277,6 +3288,11 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_layout
+layout fragment_account
+layout fragment_chat
+layout fragment_home
+layout fragment_notification
+layout fragment_search
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3335,7 +3351,9 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu bottom_nav_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground2
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
@@ -3384,6 +3402,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string info

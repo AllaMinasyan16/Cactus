@@ -7,5 +7,7 @@
     <string name="Էլհասցե_login.edittext">Էլ․ Հասցե</string>
     <string name="գրանցվել_login.button">Գրանցվել</string>
     <string name="info">Эта программа для осведомления и решение экологических проблем</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
