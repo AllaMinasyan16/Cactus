@@ -14,6 +14,7 @@
         android:layout_height="49dp"
         android:backgroundTint="@color/ButtonSignColor"
         android:text="@string/մուտք_button"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

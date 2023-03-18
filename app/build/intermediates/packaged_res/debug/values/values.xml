@@ -31,6 +31,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="info">Эта программа для осведомления и решение экологических проблем</string>
     <string name="Էլհասցե_login.edittext">Էլ․ Հասցե</string>
+    <string name="Լուծումներ_fragment.home.button">Լուծումներ</string>
+    <string name="Խնդիրներ_fragment.home.button">Խնդիրներ</string>
+    <string name="Խորհուրդներ_fragment.home.button">Խորհուրդներ</string>
+    <string name="Նորություններ_fragment.home.button">Նորություններ</string>
     <string name="գաղտնաբառ_login.edittext">Գաղտնաբառ</string>
     <string name="գրանցվել_login.button">Գրանցվել</string>
     <string name="մասին_button">Մասին</string>

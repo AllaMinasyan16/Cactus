@@ -9,5 +9,9 @@
     <string name="info">Эта программа для осведомления и решение экологических проблем</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Լուծումներ_fragment.home.button">Լուծումներ</string>
+    <string name="Խնդիրներ_fragment.home.button">Խնդիրներ</string>
+    <string name="Նորություններ_fragment.home.button">Նորություններ</string>
+    <string name="Խորհուրդներ_fragment.home.button">Խորհուրդներ</string>
 
 </resources>
