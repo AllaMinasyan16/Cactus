@@ -13,5 +13,6 @@
     <string name="Խնդիրներ_fragment.home.button">Խնդիրներ</string>
     <string name="Նորություններ_fragment.home.button">Նորություններ</string>
     <string name="Խորհուրդներ_fragment.home.button">Խորհուրդներ</string>
+    <string name="Մուտք_login.button">Մուտք</string>
 
 </resources>

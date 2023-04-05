@@ -21,9 +21,9 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -48,9 +48,21 @@
         android:text="@string/գրանցվել_login.button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/editTextNumberPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/ButtonSignColor"
+        android:text="@string/Մուտք_login.button"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

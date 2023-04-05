@@ -59,6 +59,7 @@ id textView
 layout activity_home
 layout activity_login
 layout activity_main
+layout activity_newsfragmenthome
 layout dialog_layout
 layout fragment_account
 layout fragment_chat
