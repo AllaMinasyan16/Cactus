@@ -31,6 +31,7 @@ drawable news
 drawable warning
 font droid_serif
 id EditTextlogin1
+id SignUp
 id account
 id bottom_navigation
 id button
@@ -40,11 +41,14 @@ id button3
 id button4
 id button5
 id button6
-id buttonlogin
+id button7
 id chat
 id container
 id editTextNumberPassword
+id editTextNumberPasswordRepeat
+id editTextNumberPasswordSignUp
 id editTextTextEmailAddress
+id goToSignUpActivity
 id home
 id imageButton
 id imageView
@@ -60,6 +64,7 @@ layout activity_home
 layout activity_login
 layout activity_main
 layout activity_newsfragmenthome
+layout activity_sign_up
 layout dialog_layout
 layout fragment_account
 layout fragment_chat
@@ -78,7 +83,10 @@ string Էլհասցե_login.edittext
 string Լուծումներ_fragment.home.button
 string Խնդիրներ_fragment.home.button
 string Խորհուրդներ_fragment.home.button
+string Մուտք_login.button
 string Նորություններ_fragment.home.button
+string անունը_SignUp.edittext
+string գաղտնաբառ_SignUp.edittext
 string գաղտնաբառ_login.edittext
 string գրանցվել_login.button
 string մասին_button

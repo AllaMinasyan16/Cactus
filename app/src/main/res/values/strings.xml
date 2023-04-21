@@ -14,7 +14,7 @@
     <string name="Նորություններ_fragment.home.button">Նորություններ</string>
     <string name="Խորհուրդներ_fragment.home.button">Խորհուրդներ</string>
     <string name="Մուտք_login.button">Մուտք</string>
-    <string name="գաղտնաբառ_SignUp.edittext">Կրկնել Գաղտնաբառը</string>
+    <string name="գաղտնաբառ_SignUp.edittext">Կրկնել գաղտնաբառը</string>
     <string name="անունը_SignUp.edittext">Անունը</string>
-
+    <string name="վերականգնել_SignUp.edittext">Վերականգնել գաղտնաբառը</string>
 </resources>

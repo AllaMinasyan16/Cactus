@@ -21,15 +21,15 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="273dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="40dp"
         android:drawableLeft="@drawable/ic_peoplelogin"
         android:drawablePadding="10dp"
         android:ems="10"
@@ -41,16 +41,28 @@
         app:layout_constraintStart_toStartOf="@+id/editTextNumberPassword" />
 
     <Button
-        android:id="@+id/buttonlogin"
-        android:layout_width="156dp"
-        android:layout_height="51dp"
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/ButtonSignColor"
-        android:text="@string/գրանցվել_login.button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/Մուտք_login.button"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/editTextNumberPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
+
+    <TextView
+        android:id="@+id/goToSignUpActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/գրանցվել_login.button"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

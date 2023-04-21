@@ -65,4 +65,17 @@
         app:layout_constraintStart_toStartOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
+    <TextView
+        android:id="@+id/resetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/վերականգնել_SignUp.edittext"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/goToSignUpActivity"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/goToSignUpActivity"
+        app:layout_constraintTop_toBottomOf="@+id/goToSignUpActivity" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

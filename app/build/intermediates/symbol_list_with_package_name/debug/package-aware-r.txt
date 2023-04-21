@@ -2673,6 +2673,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id SignUp
 id TOP_END
 id TOP_START
 id accelerate
@@ -2768,8 +2769,8 @@ id button3
 id button4
 id button5
 id button6
+id button7
 id buttonPanel
-id buttonlogin
 id cache_measures
 id callMeasure
 id cancel_button
@@ -2843,6 +2844,8 @@ id easeInOut
 id easeOut
 id east
 id editTextNumberPassword
+id editTextNumberPasswordRepeat
+id editTextNumberPasswordSignUp
 id editTextTextEmailAddress
 id edit_query
 id elastic
@@ -2873,6 +2876,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id goToSignUpActivity
 id gone
 id graph
 id graph_wrap
@@ -3286,6 +3290,7 @@ layout activity_home
 layout activity_login
 layout activity_main
 layout activity_newsfragmenthome
+layout activity_sign_up
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3520,7 +3525,10 @@ string Էլհասցե_login_edittext
 string Լուծումներ_fragment_home_button
 string Խնդիրներ_fragment_home_button
 string Խորհուրդներ_fragment_home_button
+string Մուտք_login_button
 string Նորություններ_fragment_home_button
+string անունը_SignUp_edittext
+string գաղտնաբառ_SignUp_edittext
 string գաղտնաբառ_login_edittext
 string գրանցվել_login_button
 string մասին_button
