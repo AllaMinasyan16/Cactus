@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="@+id/editTextNumberPassword" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -61,8 +61,21 @@
         android:layout_marginTop="20dp"
         android:text="@string/գրանցվել_login.button"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/button7"
-        app:layout_constraintStart_toStartOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <TextView
+        android:id="@+id/resetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="@string/վերականգնել_SignUp.edittext"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/goToSignUpActivity"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="@+id/goToSignUpActivity"
+        app:layout_constraintTop_toBottomOf="@+id/goToSignUpActivity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

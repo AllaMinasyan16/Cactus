@@ -28,8 +28,15 @@
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">My Application</string>
     <string name="cactus_icon">Cactus</string>
+    <string name="default_web_client_id" translatable="false">662223350083-8a45iqs0t5jjoa5ncmqqpnjdd8beu793.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">662223350083</string>
+    <string name="google_api_key" translatable="false">AIzaSyC4t8K3ZSRcElvOci05L9DFHyaSWLtccnE</string>
+    <string name="google_app_id" translatable="false">1:662223350083:android:47616c6f26d29c1bbf27f6</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC4t8K3ZSRcElvOci05L9DFHyaSWLtccnE</string>
+    <string name="google_storage_bucket" translatable="false">cactus-521d7.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="info">Эта программа для осведомления и решение экологических проблем</string>
+    <string name="project_id" translatable="false">cactus-521d7</string>
     <string name="Էլհասցե_login.edittext">Էլ․ Հասցե</string>
     <string name="Լուծումներ_fragment.home.button">Լուծումներ</string>
     <string name="Խնդիրներ_fragment.home.button">Խնդիրներ</string>
@@ -37,11 +44,12 @@
     <string name="Մուտք_login.button">Մուտք</string>
     <string name="Նորություններ_fragment.home.button">Նորություններ</string>
     <string name="անունը_SignUp.edittext">Անունը</string>
-    <string name="գաղտնաբառ_SignUp.edittext">Կրկնել Գաղտնաբառը</string>
+    <string name="գաղտնաբառ_SignUp.edittext">Կրկնել գաղտնաբառը</string>
     <string name="գաղտնաբառ_login.edittext">Գաղտնաբառ</string>
     <string name="գրանցվել_login.button">Գրանցվել</string>
     <string name="մասին_button">Մասին</string>
     <string name="մուտք_button">Մուտք</string>
+    <string name="վերականգնել_SignUp.edittext">Վերականգնել գաղտնաբառը</string>
     <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
