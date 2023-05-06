@@ -20,6 +20,7 @@ drawable ic_baseline_chat_24
 drawable ic_baseline_home_24
 drawable ic_baseline_notifications_active_24
 drawable ic_baseline_search_24
+drawable ic_baseline_send_24
 drawable ic_closedialog
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -31,9 +32,11 @@ drawable news
 drawable warning
 font droid_serif
 id EditTextlogin1
+id List_of_messages
 id SignUp
 id account
 id bottom_navigation
+id btnSend
 id button
 id button1
 id button2
@@ -57,11 +60,16 @@ id imageView4
 id imageView6
 id imageView8
 id login
+id message_text
+id message_time
+id message_user
 id name
 id notification
 id resetPassword
 id search
 id textView
+id text_layout
+layout activity_chat_home_fragment
 layout activity_home
 layout activity_login
 layout activity_main
@@ -73,6 +81,7 @@ layout fragment_chat
 layout fragment_home
 layout fragment_notification
 layout fragment_search
+layout list_item
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground2
@@ -98,6 +107,7 @@ string անունը_SignUp.edittext
 string գաղտնաբառ_SignUp.edittext
 string գաղտնաբառ_login.edittext
 string գրանցվել_login.button
+string գրեքնամակ_Chat.edittext
 string մասին_button
 string մուտք_button
 string վերականգնել_SignUp.edittext

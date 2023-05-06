@@ -47,6 +47,7 @@
     <string name="գաղտնաբառ_SignUp.edittext">Կրկնել գաղտնաբառը</string>
     <string name="գաղտնաբառ_login.edittext">Գաղտնաբառ</string>
     <string name="գրանցվել_login.button">Գրանցվել</string>
+    <string name="գրեքնամակ_Chat.edittext">Գրեք նամակ․․․</string>
     <string name="մասին_button">Մասին</string>
     <string name="մուտք_button">Մուտք</string>
     <string name="վերականգնել_SignUp.edittext">Վերականգնել գաղտնաբառը</string>

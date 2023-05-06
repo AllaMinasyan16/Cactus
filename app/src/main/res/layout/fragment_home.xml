@@ -67,6 +67,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="67dp"
         android:backgroundTint="@color/ButtonSignColor"
+        android:onClick="goToChatHomeFragment"
         android:text="@string/Խորհուրդներ_fragment.home.button"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/button5"

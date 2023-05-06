@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myapplication.app-mergeDebugResources-32:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.myapplication.app-mergeDebugResources-36:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\AndroidStudioProjects\\MyApplication8\\app\\src\\main\\res\\values-night\\themes.xml",

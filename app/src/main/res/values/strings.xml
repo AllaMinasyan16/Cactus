@@ -17,4 +17,5 @@
     <string name="գաղտնաբառ_SignUp.edittext">Կրկնել գաղտնաբառը</string>
     <string name="անունը_SignUp.edittext">Անունը</string>
     <string name="վերականգնել_SignUp.edittext">Վերականգնել գաղտնաբառը</string>
+    <string name="գրեքնամակ_Chat.edittext">Գրեք նամակ․․․</string>
 </resources>
