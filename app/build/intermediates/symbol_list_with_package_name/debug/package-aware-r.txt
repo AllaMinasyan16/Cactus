@@ -2798,7 +2798,6 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
-id account
 id action0
 id actionDown
 id actionDownUp
@@ -2862,10 +2861,8 @@ id btnSend
 id btn_holder
 id button
 id button1
-id button2
 id button3
 id button4
-id button5
 id button6
 id buttonPanel
 id button_continue
@@ -2887,7 +2884,6 @@ id center_vertical
 id chain
 id chain2
 id chains
-id chat
 id checkbox
 id checked
 id chronometer
@@ -3023,8 +3019,6 @@ id image
 id imageButton
 id imageView
 id imageView2
-id imageView3
-id imageView4
 id imageView6
 id imageView8
 id immediateStop
@@ -3048,6 +3042,7 @@ id line1
 id line3
 id linear
 id listMode
+id listViewSearch
 id list_item
 id login
 id logo
@@ -3571,6 +3566,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
+menu menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground2
 mipmap ic_launcher_round

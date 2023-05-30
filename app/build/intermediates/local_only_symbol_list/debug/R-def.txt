@@ -34,17 +34,13 @@ font droid_serif
 id EditTextlogin1
 id List_of_messages
 id SignUp
-id account
 id bottom_navigation
 id btnSend
 id button
 id button1
-id button2
 id button3
 id button4
-id button5
 id button6
-id chat
 id container
 id editTextNumberPassword
 id editTextNumberPasswordRepeat
@@ -55,10 +51,9 @@ id home
 id imageButton
 id imageView
 id imageView2
-id imageView3
-id imageView4
 id imageView6
 id imageView8
+id listViewSearch
 id login
 id message_text
 id message_time
@@ -83,6 +78,7 @@ layout fragment_notification
 layout fragment_search
 layout list_item
 menu bottom_nav_menu
+menu menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground2
 mipmap ic_launcher_round

@@ -2797,7 +2797,6 @@ int id accessibility_custom_action_6 0x7f0a002f
 int id accessibility_custom_action_7 0x7f0a0030
 int id accessibility_custom_action_8 0x7f0a0031
 int id accessibility_custom_action_9 0x7f0a0032
-int id account 0x7f0a0033
 int id action0 0x7f0a0034
 int id actionDown 0x7f0a0035
 int id actionDownUp 0x7f0a0036
@@ -2861,10 +2860,8 @@ int id btnSend 0x7f0a006f
 int id btn_holder 0x7f0a0070
 int id button 0x7f0a0071
 int id button1 0x7f0a0072
-int id button2 0x7f0a0073
 int id button3 0x7f0a0074
 int id button4 0x7f0a0075
-int id button5 0x7f0a0076
 int id button6 0x7f0a0077
 int id buttonPanel 0x7f0a0078
 int id button_continue 0x7f0a0079
@@ -2886,7 +2883,6 @@ int id center_vertical 0x7f0a0088
 int id chain 0x7f0a0089
 int id chain2 0x7f0a008a
 int id chains 0x7f0a008b
-int id chat 0x7f0a008c
 int id checkbox 0x7f0a008d
 int id checked 0x7f0a008e
 int id chronometer 0x7f0a008f
@@ -3022,8 +3018,6 @@ int id image 0x7f0a0110
 int id imageButton 0x7f0a0111
 int id imageView 0x7f0a0112
 int id imageView2 0x7f0a0113
-int id imageView3 0x7f0a0114
-int id imageView4 0x7f0a0115
 int id imageView6 0x7f0a0116
 int id imageView8 0x7f0a0117
 int id immediateStop 0x7f0a0118
@@ -3047,6 +3041,7 @@ int id line1 0x7f0a0129
 int id line3 0x7f0a012a
 int id linear 0x7f0a012b
 int id listMode 0x7f0a012c
+int id listViewSearch 0x7f0a023f
 int id list_item 0x7f0a012d
 int id login 0x7f0a012e
 int id logo 0x7f0a012f
@@ -3570,6 +3565,7 @@ int layout select_dialog_multichoice_material 0x7f0d0095
 int layout select_dialog_singlechoice_material 0x7f0d0096
 int layout support_simple_spinner_dropdown_item 0x7f0d0097
 int menu bottom_nav_menu 0x7f0f0000
+int menu menu 0x7f0f0001
 int mipmap ic_launcher 0x7f100000
 int mipmap ic_launcher_foreground2 0x7f100001
 int mipmap ic_launcher_round 0x7f100002
