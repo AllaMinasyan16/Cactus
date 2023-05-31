@@ -18,4 +18,6 @@
     <string name="անունը_SignUp.edittext">Անունը</string>
     <string name="վերականգնել_SignUp.edittext">Վերականգնել գաղտնաբառը</string>
     <string name="գրեքնամակ_Chat.edittext">Գրեք նամակ․․․</string>
+    <string name="Նկարագրություն_Newsfragmenthome">Նկարագրություն</string>
+    <string name="գրառում_Newsfragmenthome">ԳՐԱՌՈՒՄ</string>
 </resources>
