@@ -9,11 +9,12 @@
     android:background="@color/mainBgColor"
     tools:context=".HomeFragment">
 
+
     <Button
         android:id="@+id/button4"
         android:layout_width="236dp"
         android:layout_height="64dp"
-        android:layout_above="@+id/button2"
+        android:layout_above="@+id/button6"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="36dp"
         android:backgroundTint="@color/ButtonSignColor"
@@ -24,39 +25,7 @@
         app:layout_constraintHorizontal_bias="0.708"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="236dp"
-        android:layout_height="64dp"
-        android:layout_above="@+id/button5"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="57dp"
-        android:backgroundTint="@color/ButtonSignColor"
-        android:text="@string/Լուծումներ_fragment.home.button"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="236dp"
-        android:layout_height="64dp"
-        android:layout_above="@+id/button6"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="67dp"
-        android:backgroundTint="@color/ButtonSignColor"
-        android:text="@string/Խնդիրներ_fragment.home.button"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintVertical_bias="0.425" />
 
     <Button
         android:id="@+id/button6"
@@ -67,12 +36,13 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="67dp"
         android:backgroundTint="@color/ButtonSignColor"
+        android:onClick="goToChatHomeFragment"
         android:text="@string/Խորհուրդներ_fragment.home.button"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -89,32 +59,9 @@
         app:layout_constraintTop_toTopOf="@+id/button4"
         app:layout_constraintVertical_bias="0.388" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
 
-        android:layout_marginEnd="24dp"
-        android:layout_toStartOf="@+id/button2"
-        android:src="@drawable/lamp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="24dp"
 
-        android:layout_toStartOf="@+id/button5"
-        android:src="@drawable/warning"
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
 
     <ImageView
         android:id="@+id/imageView6"

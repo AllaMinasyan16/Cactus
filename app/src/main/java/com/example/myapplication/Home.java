@@ -34,17 +34,11 @@ public class Home extends AppCompatActivity {
                     case R.id.home:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
                         return true;
-                    case R.id.search:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, searchFragment).commit();
-                        return true;
                     case R.id.notification:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container, notificationFragment).commit();
                         return true;
-                    case R.id.chat:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, chatFragment).commit();
-                        return true;
-                    case R.id.account:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, accountFragment).commit();
+                    case R.id.search:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, searchFragment).commit();
                         return true;
                 }
                 return false;

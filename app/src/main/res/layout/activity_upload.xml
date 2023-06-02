@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Ներբեռնելնկար_progress.layout"
+                    android:textSize="30sp"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/uploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/kaktus" />
+
+                <EditText
+                    android:id="@+id/uploadTopic"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:padding="15dp"
+                    android:hint="@string/անունը_SignUp.edittext"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:id="@+id/uploadDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/Տեսակը_progress.layout"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/uploadLang"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/Նկարագրություն_News.fragment.home"
+                    android:padding="15dp" />
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/ՏԵՂԱԴՐԵԼ_progress.layout"
+                    android:textSize="18sp"
+                    app:cornerRаdius="20dp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>  -->
+
+</ScrollView>

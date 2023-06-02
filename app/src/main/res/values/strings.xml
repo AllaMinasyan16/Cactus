@@ -17,4 +17,12 @@
     <string name="գաղտնաբառ_SignUp.edittext">Կրկնել գաղտնաբառը</string>
     <string name="անունը_SignUp.edittext">Անունը</string>
     <string name="վերականգնել_SignUp.edittext">Վերականգնել գաղտնաբառը</string>
+    <string name="գրեքնամակ_Chat.edittext">Գրեք նամակ․․․</string>
+    <string name="Նկարագրություն_News.fragment.home">Նկարագրություն</string>
+    <string name="գրառում_News.fragment.home">ԳՐԱՌՈՒՄ</string>
+    <string name="Ներբեռնում_progress.layout">Ներբեռնում է․․․</string>
+    <string name="Ներբեռնելնկար_progress.layout">ՆԵՐԲԵՌՆԵԼ ՆԿԱՐ</string>
+    <string name="ՏԵՂԱԴՐԵԼ_progress.layout">ՏԵՂԱԴՐԵԼ</string>
+    <string name="Տեսակը_progress.layout">Տեսակը</string>
+    <string name="kaktus_logo">Kaktus logo</string>
 </resources>
