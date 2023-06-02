@@ -13,6 +13,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable buttonsigncolor_border
 drawable cactus
 drawable conversation
 drawable ic_baseline_account_circle_24
@@ -56,8 +57,13 @@ id login
 id name
 id notification
 id resetPassword
+id saveButton
 id search
 id textView
+id uploadDesc
+id uploadImage
+id uploadLang
+id uploadTopic
 layout activity_home
 layout activity_login
 layout activity_main
