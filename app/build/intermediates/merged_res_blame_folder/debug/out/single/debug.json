@@ -68,6 +68,10 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-36:\\layout\\activity_main.xml"
     },
     {
+        "merged": "com.example.myapplication.app-merged_res-34:/drawable_round_btn.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/round_btn.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-34:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-36:\\xml\\backup_rules.xml"
     },
@@ -76,8 +80,8 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-34:/layout_activity_upload.xml.flat",
-        "source": "com.example.myapplication.app-main-36:/layout/activity_upload.xml"
+        "merged": "com.example.myapplication.app-merged_res-34:/layout_activity_sign_up.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/layout/activity_sign_up.xml"
     },
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-34:\\layout_fragment_notification.xml.flat",
@@ -110,6 +114,10 @@
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-34:\\layout_fragment_chat.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-36:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-34:/layout_activity_login.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/layout/activity_login.xml"
     },
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-34:\\mipmap-xhdpi_ic_launcher_foreground2.png.flat",

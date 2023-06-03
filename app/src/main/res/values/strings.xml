@@ -25,4 +25,8 @@
     <string name="ՏԵՂԱԴՐԵԼ_progress.layout">ՏԵՂԱԴՐԵԼ</string>
     <string name="Տեսակը_progress.layout">Տեսակը</string>
     <string name="kaktus_logo">Kaktus logo</string>
+    <string name="ՄՈՒՏՔ_login">ՄՈՒՏՔ</string>
+    <string name="Ունեք_login">Ունե՞ք ստեղծված գրանցում</string>
+    <string name="Արդեն_login">Արդե՞ն ունեք գրանցում</string>
+    <string name="ԳՐԱՆՑՎԵԼ_signup.button">ԳՐԱՆՑՎԵԼ</string>
 </resources>

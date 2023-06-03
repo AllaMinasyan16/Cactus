@@ -6,7 +6,6 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -27,34 +26,28 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-
 import java.text.DateFormat;
 import java.util.Calendar;
-
 public class UploadActivity extends AppCompatActivity {
-
     ImageView uploadImage;
     Button saveButton;
     EditText uploadTopic, uploadDesc, uploadLang;
     String imageURL;
     Uri uri;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload);
-
         uploadImage = findViewById(R.id.uploadImage);
         uploadDesc = findViewById(R.id.uploadDesc);
         uploadTopic = findViewById(R.id.uploadTopic);
         uploadLang = findViewById(R.id.uploadLang);
         saveButton = findViewById(R.id.saveButton);
-
         ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
-                new ActivityResultCallback<ActivityResult>(){
+                new ActivityResultCallback<ActivityResult>() {
                     @Override
-                    public void onActivityResult(ActivityResult result){
+                    public void onActivityResult(ActivityResult result) {
                         if (result.getResultCode() == Activity.RESULT_OK){
                             Intent data = result.getData();
                             uri = data.getData();
@@ -65,7 +58,6 @@ public class UploadActivity extends AppCompatActivity {
                     }
                 }
         );
-
         uploadImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,7 +66,6 @@ public class UploadActivity extends AppCompatActivity {
                 activityResultLauncher.launch(photoPicker);
             }
         });
-
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -112,7 +103,8 @@ public class UploadActivity extends AppCompatActivity {
         String desc = uploadDesc.getText().toString();
         String lang = uploadLang.getText().toString();
         DataClass dataClass = new DataClass(title, desc, lang, imageURL);
-
+        //We are changing the child from title to currentDate,
+        // because we will be updating title as well and it may affect child value.
         String currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
         FirebaseDatabase.getInstance().getReference("Android Tutorials").child(currentDate)
                 .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {

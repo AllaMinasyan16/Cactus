@@ -3069,6 +3069,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable round_btn
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3078,7 +3079,6 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
-id EditTextlogin1
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3087,7 +3087,6 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
-id SignUp
 id TOP_END
 id TOP_START
 id accelerate
@@ -3261,12 +3260,9 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editTextNumberPassword
-id editTextNumberPasswordRepeat
-id editTextNumberPasswordSignUp
-id editTextTextEmailAddress
 id edit_query
 id elastic
+id email
 id embed
 id end
 id endToStart
@@ -3295,7 +3291,6 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
-id goToSignUpActivity
 id gone
 id graph
 id graph_wrap
@@ -3341,7 +3336,6 @@ id line3
 id linear
 id listMode
 id list_item
-id login
 id m3_side_sheet
 id marquee
 id masked
@@ -3402,7 +3396,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id name
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3434,6 +3427,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password
 id password_toggle
 id path
 id pathRelative
@@ -3448,7 +3442,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id resetPassword
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3501,6 +3494,8 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sign_in
+id sign_up
 id sin
 id skipCollapsed
 id skipped
@@ -4013,15 +4008,19 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string Արդեն_login
+string ԳՐԱՆՑՎԵԼ_signup_button
 string Էլհասցե_login_edittext
 string Լուծումներ_fragment_home_button
 string Խնդիրներ_fragment_home_button
 string Խորհուրդներ_fragment_home_button
+string ՄՈՒՏՔ_login
 string Մուտք_login_button
 string Ներբեռնելնկար_progress_layout
 string Ներբեռնում_progress_layout
 string Նկարագրություն_News_fragment_home
 string Նորություններ_fragment_home_button
+string Ունեք_login
 string ՏԵՂԱԴՐԵԼ_progress_layout
 string Տեսակը_progress_layout
 string անունը_SignUp_edittext

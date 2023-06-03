@@ -39,15 +39,19 @@
     <string name="info">Эта программа для осведомления и решение экологических проблем</string>
     <string name="kaktus_logo">Kaktus logo</string>
     <string name="project_id" translatable="false">cactus-521d7</string>
+    <string name="Արդեն_login">Արդե՞ն ունեք գրանցում</string>
+    <string name="ԳՐԱՆՑՎԵԼ_signup.button">ԳՐԱՆՑՎԵԼ</string>
     <string name="Էլհասցե_login.edittext">Էլ․ Հասցե</string>
     <string name="Լուծումներ_fragment.home.button">Լուծումներ</string>
     <string name="Խնդիրներ_fragment.home.button">Խնդիրներ</string>
     <string name="Խորհուրդներ_fragment.home.button">Խորհուրդներ</string>
+    <string name="ՄՈՒՏՔ_login">ՄՈՒՏՔ</string>
     <string name="Մուտք_login.button">Մուտք</string>
     <string name="Ներբեռնելնկար_progress.layout">ՆԵՐԲԵՌՆԵԼ ՆԿԱՐ</string>
     <string name="Ներբեռնում_progress.layout">Ներբեռնում է․․․</string>
     <string name="Նկարագրություն_News.fragment.home">Նկարագրություն</string>
     <string name="Նորություններ_fragment.home.button">Նորություններ</string>
+    <string name="Ունեք_login">Ունե՞ք ստեղծված գրանցում</string>
     <string name="ՏԵՂԱԴՐԵԼ_progress.layout">ՏԵՂԱԴՐԵԼ</string>
     <string name="Տեսակը_progress.layout">Տեսակը</string>
     <string name="անունը_SignUp.edittext">Անունը</string>
