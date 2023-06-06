@@ -18,6 +18,7 @@
         android:layout_alignParentEnd="true"
         app:fabSize="mini"
         />
+   
 
     <com.google.android.material.textfield.MaterialAutoCompleteTextView
         android:id="@+id/text_layout"

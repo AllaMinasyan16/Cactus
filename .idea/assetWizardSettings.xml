@@ -312,7 +312,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/close/baseline_close_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/add/baseline_add_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -322,8 +322,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="fffff4" />
-                            <entry key="outputName" value="ic_close" />
+                            <entry key="color" value="ffffff" />
+                            <entry key="outputName" value="baseline_add_24" />
                             <entry key="sourceFile" value="C:\Users\User\AndroidStudioProjects\MyApplication8" />
                           </map>
                         </option>

@@ -3,91 +3,100 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myapplication.databinding.ActivityLoginBinding;
-import com.example.myapplication.databinding.ActivitySignUpBinding;
+import com.example.myapplication.R;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 public class SignUp extends AppCompatActivity {
 
-    ActivitySignUpBinding binding;
+    EditText emailEditText, passwordEditText, confirmPasswordEditText;
+    Button createAccountBtn;
 
-    ProgressDialog progressDialog;
+    TextView loginBtnTextView;
 
-    FirebaseAuth firebaseAuth;
-    FirebaseFirestore firebaseFirestore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivitySignUpBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-        firebaseAuth=FirebaseAuth.getInstance();
-        firebaseFirestore=FirebaseFirestore.getInstance();
+        setContentView(R.layout.activity_sign_up);
 
-        progressDialog=new ProgressDialog(this);
+        emailEditText = findViewById(R.id.email);
+        passwordEditText = findViewById(R.id.password);
+        confirmPasswordEditText = findViewById(R.id.confirm_password);
+        createAccountBtn = findViewById(R.id.sign_up);
 
-        binding.SignUp.setOnClickListener(new View.OnClickListener(){
-           @Override
-           public void onClick(View view) {
-               String name = binding.name.getText().toString();
-               String email = binding.editTextTextEmailAddress.getText().toString();
-               String password = binding.editTextNumberPasswordSignUp.getText().toString();
-               String repeatPassword = binding.editTextNumberPasswordRepeat.getText().toString();
+        loginBtnTextView = findViewById(R.id.sign_in);
 
-               progressDialog.show();
-               firebaseAuth.createUserWithEmailAndPassword(email, password)
-                       .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                           @Override
-                           public void onSuccess(AuthResult authResult) {
-                               startActivity(new Intent(SignUp.this, login.class));
-                               progressDialog.cancel();
+        createAccountBtn.setOnClickListener(v -> createAccount());
+        loginBtnTextView.setOnClickListener(v -> finish());
 
-                               firebaseFirestore.collection("User")
-                                       .document(FirebaseAuth.getInstance().getUid())
-                                       .set(new UserModel(name, email));
 
-                           }
-                       })
-                       .addOnFailureListener(new OnFailureListener() {
-                           @Override
-                           public void onFailure(@NonNull Exception e) {
-                               Toast.makeText(SignUp.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                               progressDialog.cancel();
-                           }
-                       });
-               FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-               FirebaseUser user = firebaseAuth.getCurrentUser();
-               View main = findViewById(R.id.SignUp);
-
-               if (user != null) {
-                   user.sendEmailVerification()
-                           .addOnCompleteListener(new OnCompleteListener<Void>() {
-                               @Override
-                               public void onComplete(@NonNull Task<Void> task) {
-                                   if (task.isSuccessful()) {
-                                       Snackbar.make(main, "Письмо для подтверждения отправлено на " + user.getEmail(), Snackbar.LENGTH_SHORT).show();
-                                   } else {
-                                       Snackbar.make(main, "Ошибка отправки письма для подтверждения " + task.getException().getMessage(), Snackbar.LENGTH_LONG).show();
-                                   }
-                               }
-                           });
-
-               }
-           }
-        });
 
     }
+
+    void createAccount(){
+        String email = emailEditText.getText().toString();
+        String password = passwordEditText.getText().toString();
+        String confirmPassword = confirmPasswordEditText.getText().toString();
+
+        boolean isValidated = validateData(email, password, confirmPassword);
+        if(!isValidated){
+            return;
+        }
+
+        createAccountInFirebase(email, password);
     }
+
+    void createAccountInFirebase(String email, String password) {
+
+
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(SignUp.this,
+                new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+
+
+                        if(task.isSuccessful()){
+                            // creating acc is done
+                            Toast.makeText(SignUp.this,"Successfully create account, Check email to verify", Toast.LENGTH_SHORT ).show();
+                            firebaseAuth.getCurrentUser().sendEmailVerification();
+                            firebaseAuth.signOut();
+                            finish();
+                        } else{
+                            //failure
+                            Toast.makeText(SignUp.this,task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT ).show();
+
+                        }
+                    }
+                });
+    }
+
+
+    boolean validateData(String email, String password, String confirmPassword){
+        // validate the data that are input by user
+
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            emailEditText.setError("Email is invalid");
+            return false;
+        }
+        if (password.length() < 6){
+            passwordEditText.setError("Password length is invalid");
+            return false;
+        }
+        if (!password.equals(confirmPassword)){
+            confirmPasswordEditText.setError("Password not matched");
+        }
+        return true;
+    }
+}

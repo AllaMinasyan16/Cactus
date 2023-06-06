@@ -3,90 +3,89 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.util.Patterns;
+
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myapplication.databinding.ActivityLoginBinding;
-import com.example.myapplication.databinding.ActivitySignUpBinding;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class login extends AppCompatActivity {
-    ActivityLoginBinding binding;
-    FirebaseAuth firebaseAuth;
-    ProgressDialog progressDialog;
-    Button button2;
+
+    EditText emailEditText, passwordEditText;
+    Button loginBtn;
+
+    TextView createAccountBtnTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityLoginBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_login);
 
-        firebaseAuth=FirebaseAuth.getInstance();
-        progressDialog=new ProgressDialog(this);
+        emailEditText = findViewById(R.id.email);
+        passwordEditText = findViewById(R.id.password);
+        loginBtn = findViewById(R.id.sign_in);
+        createAccountBtnTextView = findViewById(R.id.sign_up);
 
-        binding.login.setOnClickListener(new View.OnClickListener() {
+        loginBtn.setOnClickListener((v)-> loginUser());
+        createAccountBtnTextView.setOnClickListener((v)-> startActivity(new Intent(login.this, SignUp.class)));
+    }
+
+    void loginUser(){
+        String email = emailEditText.getText().toString();
+        String password = passwordEditText.getText().toString();
+
+
+        boolean isValidated = validateData(email, password);
+        if(!isValidated){
+            return;
+        }
+
+        loginAccountInFirebase(email, password);
+    }
+
+    void loginAccountInFirebase(String email, String password){
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
-            public void onClick(View view) {
-                String email=binding.editTextTextEmailAddress.getText().toString().trim();
-                String password=binding.editTextNumberPassword.getText().toString().trim();
-                progressDialog.show();
-                firebaseAuth.signInWithEmailAndPassword(email,password)
-                        .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                            @Override
-                            public void onSuccess(AuthResult authResult) {
-                                progressDialog.cancel();
-                                Toast.makeText(login.this, "Login Succesfull",Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(login.this,Home.class));
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                progressDialog.cancel();
-                                Toast.makeText(login.this,e.getMessage(),Toast.LENGTH_SHORT).show();
-                            }
-                        });
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
+                    // login is success
+                    if (firebaseAuth.getCurrentUser().isEmailVerified()){
+                        //go to mainActivity
+                        startActivity(new Intent(login.this, Home.class));
+                        finish();
+                    } else{
+                        Toast.makeText(login.this, "Email not verified, Please verify your email.", Toast.LENGTH_SHORT).show();
+                    }
+                } else{
+                    // login failed
+                    Toast.makeText(login.this,  task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
+    }
 
-        binding.resetPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String email=binding.editTextTextEmailAddress.getText().toString();
-                progressDialog.setTitle("Sending Mail");
-                progressDialog.show();
-                firebaseAuth.sendPasswordResetEmail(email)
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-                                progressDialog.cancel();
-                                Toast.makeText(login.this, "Email Sent", Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                progressDialog.cancel();
-                                Toast.makeText(login.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        });
-            }
-        });
 
-        binding.goToSignUpActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(login.this,SignUp.class));
-            }
-        });
+    boolean validateData(String email, String password){
+        // validate the data that are input by user
 
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            emailEditText.setError("Email is invalid");
+            return false;
+        }
+        if (password.length() < 6){
+            passwordEditText.setError("Password length is invalid");
+            return false;
+        }
+        return true;
     }
 }

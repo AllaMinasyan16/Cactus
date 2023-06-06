@@ -1,100 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBgColor"
-    tools:context=".SignUp"
-    >
-
-    <EditText
-
-        android:id="@+id/editTextNumberPasswordSignUp"
-        android:layout_width="271dp"
-        android:layout_height="61dp"
-        android:drawableLeft="@drawable/ic_password"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/գաղտնաբառ_login.edittext"
-        android:inputType="numberPassword"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="273dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="40dp"
-        android:drawableLeft="@drawable/ic_peoplelogin"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/Էլհասցե_login.edittext"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPasswordSignUp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberPasswordSignUp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberPasswordSignUp" />
-
-    <EditText
-
-        android:id="@+id/editTextNumberPasswordRepeat"
-        android:layout_width="271dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="20dp"
-        android:drawableLeft="@drawable/ic_password"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/գաղտնաբառ_SignUp.edittext"
-        android:inputType="numberPassword"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberPasswordSignUp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberPasswordSignUp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPasswordSignUp"
-        app:layout_constraintVertical_bias="0.073" />
-
-    <EditText
-
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:drawableLeft="@drawable/ic_peoplelogin"
-        android:drawablePadding="10dp"
-        android:ems="13"
-        android:hint="@string/անունը_SignUp.edittext"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress" />
-
-    <Button
-        android:id="@+id/SignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/գրանցվել_login.button"
-        android:backgroundTint="@color/ButtonSignColor"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberPasswordRepeat"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberPasswordRepeat"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPasswordRepeat" />
+    android:orientation="vertical"
+    tools:context=".SignUp">
 
     <TextView
-        android:id="@+id/goToSignUpActivity"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="@string/մուտք_button"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/SignUp"
-        app:layout_constraintStart_toStartOf="@+id/SignUp"
-        app:layout_constraintTop_toBottomOf="@+id/SignUp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:gravity="center_horizontal"
+        android:text="@string/ԳՐԱՆՑՎԵԼ_signup"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/kaktus"
+        android:layout_marginTop="5dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Էլհասցե_login.edittext"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/գաղտնաբառ_login.edittext"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="10dp"
+        app:passwordToggleEnabled="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/գաղտնաբառ_SignUp.edittext"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginHorizontal="10dp"
+
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="@string/գրանցվել_login.button"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Արդեն_login"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/մուտք_button"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/ButtonSignColor"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

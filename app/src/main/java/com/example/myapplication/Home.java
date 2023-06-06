@@ -2,46 +2,32 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
+import android.view.View;
+import android.widget.Button;
 
 public class Home extends AppCompatActivity {
-    BottomNavigationView bottomNavigationView;
-
-    HomeFragment homeFragment=new HomeFragment();
-    SearchFragment searchFragment=new SearchFragment();
-    NotificationFragment notificationFragment=new NotificationFragment();
-    chatFragment chatFragment=new chatFragment();
-    accountFragment accountFragment=new accountFragment();
+    Button button4, button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
-
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        button6 = (Button) findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected( MenuItem item) {
+            public void onClick(View view) {
+                startActivity(new Intent(Home.this, ChatHomeFragment.class));
+            }
+        });
 
-                // barec
-                switch (item.getItemId()){
-                    case R.id.home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
-                        return true;
-                    case R.id.notification:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, notificationFragment).commit();
-                        return true;
-                    case R.id.search:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, searchFragment).commit();
-                        return true;
-                }
-                return false;
+        button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home.this, Newsfragmenthome.class));
             }
         });
     }

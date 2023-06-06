@@ -18,6 +18,19 @@
     <string name="անունը_SignUp.edittext">Անունը</string>
     <string name="վերականգնել_SignUp.edittext">Վերականգնել գաղտնաբառը</string>
     <string name="գրեքնամակ_Chat.edittext">Գրեք նամակ․․․</string>
-    <string name="Նկարագրություն_Newsfragmenthome">Նկարագրություն</string>
-    <string name="գրառում_Newsfragmenthome">ԳՐԱՌՈՒՄ</string>
+    <string name="Նկարագրություն_News.fragment.home">Նկարագրություն</string>
+    <string name="գրառում_News.fragment.home">ԳՐԱՌՈՒՄ</string>
+    <string name="Ներբեռնում_progress.layout">Ներբեռնում է․․․</string>
+    <string name="Ներբեռնելնկար_progress.layout">ՆԵՐԲԵՌՆԵԼ ՆԿԱՐ</string>
+    <string name="ՏԵՂԱԴՐԵԼ_progress.layout">ՏԵՂԱԴՐԵԼ</string>
+    <string name="Տեսակը_progress.layout">Տեսակը</string>
+    <string name="kaktus_logo">Kaktus logo</string>
+    <string name="ՄՈՒՏՔ_login">ՄՈՒՏՔ</string>
+    <string name="Ունեք_login">Ունե՞ք ստեղծված գրանցում</string>
+    <string name="Արդեն_login">Արդե՞ն ունեք գրանցում</string>
+    <string name="ԳՐԱՆՑՎԵԼ_signup">ԳՐԱՆՑՎԵԼ</string>
+    <string name="Մուտքագրեք_verification">Մուտքագրեք հաստատման կոդը</string>
+    <string name="Հաստատման_verification">Հաստատման կոդ</string>
+    <string name="Հաստատել_verification">Հաստատել</string>
+    <string name="Վերնագիր_verification">Վերնագիր</string>
 </resources>
