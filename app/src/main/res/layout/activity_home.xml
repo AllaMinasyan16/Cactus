@@ -18,14 +18,14 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="36dp"
         android:backgroundTint="@color/ButtonSignColor"
-        android:text="@string/Նորություններ_fragment.home.button"
+        android:text="@string/Նորություններ_Home"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintHorizontal_bias="0.737"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintVertical_bias="0.313" />
 
     <Button
         android:id="@+id/button6"
@@ -37,20 +37,65 @@
         android:layout_marginEnd="67dp"
         android:backgroundTint="@color/ButtonSignColor"
         android:onClick="goToChatHomeFragment"
-        android:text="@string/Խորհուրդներ_fragment.home.button"
+        android:text="@string/Քննարկում_Home"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="236dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="67dp"
+        android:backgroundTint="@color/ButtonSignColor"
+        android:text="@string/Խորհուրդներ_Home"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="236dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="67dp"
+        android:backgroundTint="@color/ButtonSignColor"
+        android:text="@string/Խնդիրներ_Home"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/imageView7"
         android:layout_width="65dp"
         android:layout_height="63dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@+id/button4"
+        android:src="@drawable/warning"
+        app:layout_constraintBottom_toBottomOf="@+id/button7"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="@+id/button7"
+        app:layout_constraintVertical_bias="0.388" />
 
-
+    <ImageView
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/imageView4"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginEnd="24dp"
         android:layout_toStartOf="@+id/button4"
         android:src="@drawable/news"
@@ -59,21 +104,32 @@
         app:layout_constraintTop_toTopOf="@+id/button4"
         app:layout_constraintVertical_bias="0.388" />
 
-
-
-
+    <ImageView
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@+id/button5"
+        android:src="@drawable/conversation"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button5" />
 
     <ImageView
+        android:layout_marginHorizontal="5dp"
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="24dp"
-        android:layout_toStartOf="@+id/button6"
-        android:src="@drawable/conversation"
+        android:layout_toStartOf="@+id/button5"
+        android:src="@drawable/chat"
         app:layout_constraintBottom_toBottomOf="@+id/button6"
         app:layout_constraintEnd_toStartOf="@+id/button6"
-        app:layout_constraintTop_toTopOf="@+id/button6" />
+        app:layout_constraintTop_toTopOf="@+id/button6"
+        app:layout_constraintVertical_bias="0.531" />
 
     <ImageView
         android:id="@+id/imageView8"

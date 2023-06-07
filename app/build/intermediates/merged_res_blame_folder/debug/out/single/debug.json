@@ -16,12 +16,12 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\layout\\dialog_layout.xml"
     },
     {
-        "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\xml\\data_extraction_rules.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\drawable_ic_baseline_send_24.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\drawable\\ic_baseline_send_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\xml\\data_extraction_rules.xml"
     },
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\layout_activity_main.xml.flat",
@@ -30,6 +30,10 @@
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\drawable_chat.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\drawable\\chat.png"
     },
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\layout_activity_home.xml.flat",
@@ -132,10 +136,6 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\drawable\\kaktus.jpg"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-40:/layout_recycler_item.xml.flat",
-        "source": "com.example.myapplication.app-main-42:/layout/recycler_item.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\layout\\activity_login.xml"
     },
@@ -146,6 +146,10 @@
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\drawable_baseline_add_24.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\drawable\\baseline_add_24.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-40:/layout_activity_advices.xml.flat",
+        "source": "com.example.myapplication.app-main-42:/layout/activity_advices.xml"
     },
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\mipmap-xhdpi_ic_launcher_round.png.flat",
