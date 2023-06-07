@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myapplication.app-mergeDebugResources-36:/values-bg/values-bg.xml",
+            "outputFile": "com.example.myapplication.app-mergeDebugResources-38:/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\5f814657f95f02a33f70ae3ea2686c62\\transformed\\firebase-ui-auth-8.0.2\\res\\values-bg\\values-bg.xml",
