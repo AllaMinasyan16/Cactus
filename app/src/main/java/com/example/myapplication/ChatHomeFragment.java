@@ -94,6 +94,6 @@ public class ChatHomeFragment extends AppCompatActivity {
             }
         };
         listOfMessages.setAdapter(adapter);
-        adapter.startListening(); // Добавьте эту строку для начала прослушивания базы данных
+        adapter.startListening();
     }
 }
