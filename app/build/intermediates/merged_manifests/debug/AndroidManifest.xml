@@ -42,6 +42,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyApplication" >
         <activity
+            android:name="com.example.myapplication.Advices"
+            android:exported="false" />
+        <activity
             android:name="com.example.myapplication.DetailActivity"
             android:exported="false" />
         <activity

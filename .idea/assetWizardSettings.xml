@@ -312,7 +312,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/image/baseline_image_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/format_list_bulleted/baseline_format_list_bulleted_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -322,8 +322,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="7a9c57" />
-                            <entry key="outputName" value="baseline_image_24" />
+                            <entry key="color" value="ffffff" />
+                            <entry key="outputName" value="baseline_format_list_bulleted_24" />
                             <entry key="sourceFile" value="C:\Users\User\AndroidStudioProjects\MyApplication8" />
                           </map>
                         </option>
