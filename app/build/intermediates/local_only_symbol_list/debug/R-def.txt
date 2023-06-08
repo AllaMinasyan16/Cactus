@@ -5,6 +5,7 @@ array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
 color ButtonSignColor
+color RedDelete
 color black
 color mainBgColor
 color purple_200
@@ -14,6 +15,8 @@ color teal_200
 color teal_700
 color white
 drawable baseline_add_24
+drawable baseline_delete_24
+drawable baseline_format_list_bulleted_24
 drawable baseline_image_24
 drawable buttonsigncolor_border
 drawable cactus
@@ -46,6 +49,7 @@ id button5
 id button6
 id button7
 id confirm_password
+id deleteButton
 id detailImage
 id detailLang
 id detailTitle
@@ -83,9 +87,11 @@ layout activity_detail
 layout activity_home
 layout activity_login
 layout activity_main
+layout activity_news
 layout activity_newsfragmenthome
 layout activity_sign_up
 layout activity_upload
+layout activity_upload2
 layout dialog_layout
 layout list_item
 layout progress_layout

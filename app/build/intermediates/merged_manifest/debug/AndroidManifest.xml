@@ -42,6 +42,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyApplication" >
         <activity
+            android:name="com.example.myapplication.News"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.Upload"
+            android:exported="false" />
+        <activity
             android:name="com.example.myapplication.Advices"
             android:exported="false" />
         <activity

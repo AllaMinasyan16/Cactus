@@ -8,6 +8,10 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\layout_activity_news.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\layout\\activity_news.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\xml\\backup_rules.xml"
     },
@@ -112,8 +116,16 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\drawable\\ic_peoplelogin.xml"
     },
     {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\drawable_baseline_delete_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\drawable\\baseline_delete_24.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\layout_list_item.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\layout_activity_upload2.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\layout\\activity_upload2.xml"
     },
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\drawable_conversation.png.flat",
@@ -148,10 +160,6 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\drawable\\baseline_add_24.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-40:/layout_activity_advices.xml.flat",
-        "source": "com.example.myapplication.app-main-42:/layout/activity_advices.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
@@ -178,6 +186,10 @@
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\layout_activity_newsfragmenthome.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\layout\\activity_newsfragmenthome.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-40:/layout_activity_news.xml.flat",
+        "source": "com.example.myapplication.app-main-42:/layout/activity_news.xml"
     },
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\drawable_ic_baseline_chat_24.xml.flat",
@@ -216,8 +228,16 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\mipmap-mdpi\\ic_launcher_foreground2.png"
     },
     {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\drawable_baseline_format_list_bulleted_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\drawable\\baseline_format_list_bulleted_24.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\layout_activity_sign_up.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\layout_activity_advices.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-main-42:\\layout\\activity_advices.xml"
     },
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\com.example.myapplication.app-merged_res-40:\\menu_bottom_nav_menu.xml.flat",

@@ -18,6 +18,7 @@
         <item>@font/droid_serif</item>
     </array>
     <color name="ButtonSignColor">#7a9c57</color>
+    <color name="RedDelete">#FF8A8A</color>
     <color name="black">#FF000000</color>
     <color name="mainBgColor">#FFFEF2</color>
     <color name="purple_200">#FFBB86FC</color>

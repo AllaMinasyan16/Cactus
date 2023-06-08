@@ -1381,6 +1381,7 @@ int bool abc_action_bar_embed_tabs 0x7f050000
 int bool abc_config_actionMenuItemAllCaps 0x7f050001
 int bool mtrl_btn_textappearance_all_caps 0x7f050002
 int color ButtonSignColor 0x7f060000
+int color RedDelete 0x7f060308
 int color abc_background_cache_hint_selector_material_dark 0x7f060001
 int color abc_background_cache_hint_selector_material_light 0x7f060002
 int color abc_btn_colored_borderless_text_material 0x7f060003
@@ -3034,6 +3035,8 @@ int drawable abc_vector_test 0x7f080077
 int drawable avd_hide_password 0x7f080078
 int drawable avd_show_password 0x7f080079
 int drawable baseline_add_24 0x7f08007a
+int drawable baseline_delete_24 0x7f080115
+int drawable baseline_format_list_bulleted_24 0x7f080116
 int drawable baseline_image_24 0x7f08007b
 int drawable btn_checkbox_checked_mtrl 0x7f08007c
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f08007d
@@ -3363,6 +3366,7 @@ int id decelerate 0x7f0a00a8
 int id decelerateAndComplete 0x7f0a00a9
 int id decor_content_parent 0x7f0a00aa
 int id default_activity_button 0x7f0a00ab
+int id deleteButton 0x7f0a0259
 int id deltaRelative 0x7f0a00ac
 int id dependency_ordering 0x7f0a00ad
 int id design_bottom_sheet 0x7f0a00ae
@@ -3908,9 +3912,11 @@ int layout activity_detail 0x7f0d001d
 int layout activity_home 0x7f0d001e
 int layout activity_login 0x7f0d001f
 int layout activity_main 0x7f0d0020
+int layout activity_news 0x7f0d009c
 int layout activity_newsfragmenthome 0x7f0d0021
 int layout activity_sign_up 0x7f0d0022
 int layout activity_upload 0x7f0d0023
+int layout activity_upload2 0x7f0d009b
 int layout browser_actions_context_menu_page 0x7f0d0024
 int layout browser_actions_context_menu_row 0x7f0d0025
 int layout custom_dialog 0x7f0d0026
