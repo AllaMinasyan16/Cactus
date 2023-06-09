@@ -22,20 +22,13 @@ drawable buttonsigncolor_border
 drawable cactus
 drawable chat
 drawable conversation
-drawable ic_baseline_account_circle_24
 drawable ic_baseline_chat_24
 drawable ic_baseline_home_24
-drawable ic_baseline_notifications_active_24
-drawable ic_baseline_search_24
 drawable ic_baseline_send_24
-drawable ic_close
 drawable ic_closedialog
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable ic_password
-drawable ic_peoplelogin
 drawable kaktus
-drawable lamp
 drawable news
 drawable round_btn
 drawable warning
@@ -50,6 +43,7 @@ id button6
 id button7
 id confirm_password
 id deleteButton
+id detailDesc
 id detailImage
 id detailLang
 id detailTitle
@@ -91,7 +85,6 @@ layout activity_news
 layout activity_newsfragmenthome
 layout activity_sign_up
 layout activity_upload
-layout activity_upload2
 layout dialog_layout
 layout list_item
 layout progress_layout

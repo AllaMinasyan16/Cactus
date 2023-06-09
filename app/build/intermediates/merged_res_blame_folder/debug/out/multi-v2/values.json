@@ -205,11 +205,9 @@
                 {
                     "source": "C:\\Users\\User\\AndroidStudioProjects\\MyApplication8\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "-1,11,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startColumns": "-1,4,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startOffsets": "-1,466,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endColumns": "-1,43,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endOffsets": "-1,505,-1,-1,-1,-1,-1,-1,-1,-1"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "642,643,657,909,987,988,989,1000,1001,1004",

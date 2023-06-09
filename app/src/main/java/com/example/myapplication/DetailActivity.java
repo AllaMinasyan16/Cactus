@@ -19,7 +19,7 @@ import com.google.firebase.storage.StorageReference;
 
 public class DetailActivity extends AppCompatActivity {
 
-    TextView detailLang, detailTitle;
+    TextView detailLang, detailTitle, detailDesc;
     ImageView detailImage;
     FloatingActionButton deleteButton;
     String key = "";
@@ -32,6 +32,7 @@ public class DetailActivity extends AppCompatActivity {
 
         detailLang = findViewById(R.id.detailLang);
         detailImage = findViewById(R.id.detailImage);
+        detailDesc = findViewById(R.id.detailDesc);
         detailTitle = findViewById(R.id.detailTitle);
         deleteButton = findViewById(R.id.deleteButton);
 
@@ -39,6 +40,7 @@ public class DetailActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
             detailLang.setText(bundle.getString("Description"));
+            detailDesc.setText(bundle.getString("Language"));
             detailTitle.setText(bundle.getString("Title"));
             key = bundle.getString("Key");
             imageUrl = bundle.getString("Image");
