@@ -18,7 +18,6 @@
         <item>@font/droid_serif</item>
     </array>
     <color name="ButtonSignColor">#7a9c57</color>
-    <color name="RedDelete">#FF8A8A</color>
     <color name="black">#FF000000</color>
     <color name="mainBgColor">#FFFEF2</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -37,12 +36,12 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC4t8K3ZSRcElvOci05L9DFHyaSWLtccnE</string>
     <string name="google_storage_bucket" translatable="false">cactus-521d7.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="info">Эта программа для осведомления и решение экологических проблем</string>
+    <string name="info">Այս ծրագիրը բնապահպանական խնդիրների իրազեկման և լուծման համար է</string>
     <string name="project_id" translatable="false">cactus-521d7</string>
     <string name="Արդեն_login">Արդե՞ն ունեք գրանցում</string>
     <string name="ԳՐԱՆՑՎԵԼ_signup">ԳՐԱՆՑՎԵԼ</string>
     <string name="Էլհասցե_login.edittext">Էլ․ Հասցե</string>
-    <string name="Խնդիրներ_Home">Ավելացնել խնդիր</string>
+    <string name="Խնդիրներ_Home">խնդիրներ</string>
     <string name="Խորհուրդներ_Home">Խորհուրդներ</string>
     <string name="ՄՈՒՏՔ_login">ՄՈՒՏՔ</string>
     <string name="Մուտք_login.button">Մուտք</string>

@@ -6,10 +6,10 @@
     <string name="գաղտնաբառ_login.edittext">Գաղտնաբառ</string>
     <string name="Էլհասցե_login.edittext">Էլ․ Հասցե</string>
     <string name="գրանցվել_login.button">Գրանցվել</string>
-    <string name="info">Эта программа для осведомления и решение экологических проблем</string>
+    <string name="info">Այս ծրագիրը բնապահպանական խնդիրների իրազեկման և լուծման համար է</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="Խնդիրներ_Home">Ավելացնել խնդիր</string>
+    <string name="Խնդիրներ_Home">խնդիրներ</string>
     <string name="Նորություններ_Home">Նորություններ</string>
     <string name="Խորհուրդներ_Home">Խորհուրդներ</string>
     <string name="Մուտք_login.button">Մուտք</string>

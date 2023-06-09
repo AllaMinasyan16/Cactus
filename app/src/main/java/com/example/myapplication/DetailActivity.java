@@ -21,9 +21,6 @@ public class DetailActivity extends AppCompatActivity {
 
     TextView detailLang, detailTitle, detailDesc;
     ImageView detailImage;
-    FloatingActionButton deleteButton;
-    String key = "";
-    String imageUrl = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +31,6 @@ public class DetailActivity extends AppCompatActivity {
         detailImage = findViewById(R.id.detailImage);
         detailDesc = findViewById(R.id.detailDesc);
         detailTitle = findViewById(R.id.detailTitle);
-        deleteButton = findViewById(R.id.deleteButton);
 
 
         Bundle bundle = getIntent().getExtras();
@@ -42,28 +38,7 @@ public class DetailActivity extends AppCompatActivity {
             detailLang.setText(bundle.getString("Description"));
             detailDesc.setText(bundle.getString("Language"));
             detailTitle.setText(bundle.getString("Title"));
-            key = bundle.getString("Key");
-            imageUrl = bundle.getString("Image");
             Glide.with(this).load(bundle.getString("Image")).into(detailImage);
         }
-        deleteButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Android Tutorials");
-                FirebaseStorage storage = FirebaseStorage.getInstance();
-
-
-                StorageReference  storageReference = storage.getReferenceFromUrl(imageUrl);
-                storageReference.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void unused) {
-                        reference.child(key).removeValue();
-                        Toast.makeText(DetailActivity.this, "Deleted", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(), Newsfragmenthome.class));
-                        finish();
-                    }
-                });
-            }
-        });
     }
 }

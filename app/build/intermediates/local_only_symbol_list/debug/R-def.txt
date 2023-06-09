@@ -5,7 +5,6 @@ array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
 color ButtonSignColor
-color RedDelete
 color black
 color mainBgColor
 color purple_200
@@ -15,7 +14,6 @@ color teal_200
 color teal_700
 color white
 drawable baseline_add_24
-drawable baseline_delete_24
 drawable baseline_format_list_bulleted_24
 drawable baseline_image_24
 drawable buttonsigncolor_border
@@ -25,7 +23,6 @@ drawable conversation
 drawable ic_baseline_chat_24
 drawable ic_baseline_home_24
 drawable ic_baseline_send_24
-drawable ic_closedialog
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable kaktus
@@ -42,14 +39,12 @@ id button5
 id button6
 id button7
 id confirm_password
-id deleteButton
 id detailDesc
 id detailImage
 id detailLang
 id detailTitle
 id email
 id fab
-id imageButton
 id imageView
 id imageView4
 id imageView5
@@ -69,7 +64,6 @@ id recyclerView
 id saveButton
 id sign_in
 id sign_up
-id textView
 id text_layout
 id uploadDesc
 id uploadImage
@@ -85,7 +79,6 @@ layout activity_news
 layout activity_newsfragmenthome
 layout activity_sign_up
 layout activity_upload
-layout dialog_layout
 layout list_item
 layout progress_layout
 layout recycler_item

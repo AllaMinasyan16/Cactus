@@ -6,18 +6,9 @@ public class DataClass {
     private String dataDesc;
     private String dataLang;
     private String dataImage;
-    private String key;
 
     public void setDataImage(String dataImage) {
         this.dataImage = dataImage;
-    }
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
-        this.key = key;
     }
 
     public String getDataTitle() {

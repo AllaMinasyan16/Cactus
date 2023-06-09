@@ -70,7 +70,7 @@
         android:layout_marginEnd="67dp"
         android:backgroundTint="@color/ButtonSignColor"
         android:text="@string/Խնդիրներ_Home"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button4"

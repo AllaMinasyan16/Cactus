@@ -1382,7 +1382,6 @@ bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
 color ButtonSignColor
-color RedDelete
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -3036,7 +3035,6 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_add_24
-drawable baseline_delete_24
 drawable baseline_format_list_bulleted_24
 drawable baseline_image_24
 drawable btn_checkbox_checked_mtrl
@@ -3095,7 +3093,6 @@ drawable ic_baseline_home_24
 drawable ic_baseline_send_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
-drawable ic_closedialog
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3360,7 +3357,6 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
-id deleteButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3458,7 +3454,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton
 id imageView
 id imageView4
 id imageView5
@@ -3723,7 +3718,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3929,7 +3923,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout dialog_layout
 layout fui_activity_invisible
 layout fui_activity_register_email
 layout fui_activity_register_phone
